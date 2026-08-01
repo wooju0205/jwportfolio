@@ -93,9 +93,21 @@ nav.wrap{ display:flex; align-items:center; justify-content:space-between; heigh
 .btn-primary:hover{ filter:brightness(1.1); transform:translateY(-1px); }
 .btn-ghost{ border:1px solid var(--border); color:var(--ink); }
 .btn-ghost:hover{ border-color:var(--wax); color:var(--wax); }
-.social-row{ display:flex; gap:13px; margin-left:5px; }
-.social-row a{ width:83px; height:40px; border-radius:9px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; color:var(--ink-soft); font-family:var(--mono); font-size:13px; transition:color .15s ease, border-color .15s ease; }
-.social-row a:hover{ color:var(--wax); border-color:var(--wax); }
+.social-row { 
+  display:inline-flex; 
+  gap: 20px;          
+  align-items: center;
+}
+.social-row a { 
+  color: var(--ink-soft); 
+  font-size: 40px;    
+  line-height: 1;    
+  transition: color .15s ease, transform .15s ease; 
+}
+.social-row a:hover { 
+  color: var(--wax); 
+  transform: scale(1.1); 
+}
 
 /* ---------- finder window ---------- */
 .finder-window{
