@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jady Woo — Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%239B2C2C'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='40' fill='%23F6EFE2' text-anchor='middle'%3EJW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#" class="logo"><img src="personal_logo.jpg" alt="Jady Woo" class="logo-img"></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Connect me</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="signature">Hi, I'm Jady!</span>
+        <div class="role-pills">
+          <span class="pill">CS Student</span>
+          <span class="pill">UI/UX Designer</span>
+          <span class="pill">Frontend Developer</span>
+        </div>
+        <h1>I design interfaces, then build them <em>properly</em>.</h1>
+        <p class="lede">I care about the parts of software people actually feel — the layout decisions, the type scale, the small hover that tells you something worked. Warm systems, built carefully.</p>
+        <p class="status-line">currently fueled by: coffees, a half-finished sketchbook, and one too many browser tabs</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="Resume_Jady Woo.pdf" target="_blank" class="btn btn-ghost">Resume ↓</a>
+          <div class="social-row">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="finder-window">
+          <div class="finder-titlebar">
+            <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+            <span class="finder-title">Finder</span>
+          </div>
+          <div class="finder-body">
+            <aside class="finder-sidebar">
+              <div class="finder-group-label">Favorites</div>
+              <button class="finder-item active" data-pane="resume"><span class="ic">📄</span> Resume</button>
+              <button class="finder-item" data-pane="projects"><span class="ic">📁</span> Projects</button>
+            </aside>
+            <div class="finder-content">
+              <div class="finder-pane" id="pane-resume">
+                <p class="finder-path">Jady Woo &gt; Resume</p>
+                <div class="file-grid">
+                  <a class="file-item" href="Resume_Jady Woo.pdf" target="_blank" rel="noopener">
+                    <span class="file-icon">📄</span>
+                    <span class="file-label">Resume.pdf</span>
+                  </a>
+                </div>
+              </div>
+              <div class="finder-pane" id="pane-projects" hidden>
+                <p class="finder-path">Jady Woo &gt; Projects</p>
+                  <a class="file-item" href="batchGrade.pdf" target="_blank" rel="noopener">
+                    <span class="file-icon">📁</span>
+                    <span class="file-label">BatchGrade</span>
+                  </a>
+                  <a class="file-item" href="sphere.png" target="_blank" rel="noopener">
+                    <span class="file-icon">📁</span>
+                    <span class="file-label">The Sphere</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="wrap">
+    <p class="eyebrow">About</p>
+    <h2 class="section-title">A little more about how I work</h2>
+    <div class="about-grid">
+      <div>
+        <p>I'm <strong>Jady Woo</strong>, a Computer Science student who spends most of my energy on the parts of software people actually touch — the layout, the copy, the micro-interaction that tells you something worked.</p>
+        <p>I like starting from the user's problem, not the component library: sketching flows, testing them in Figma, then building the real thing in React so nothing gets lost in translation between design and code.</p>
+        <p>I still enjoy the occasional dive into <strong>systems territory</strong> — I rewrote a process scheduler for a class OS this year — but my focus and my portfolio live on the <strong>frontend and product design</strong> side of the stack.</p>
+      </div>
+      <div class="sticky-note">
+        <h4>three things about me</h4>
+        <ul>
+          <li>I keep a paper sketchbook next to my laptop — bad UI ideas get killed there first, not in Figma</li>
+          <li>My favorite font pairing is a personality trait at this point, not a skill</li>
+          <li>I will absolutely rewrite a scheduler for fun on a weekend</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="wrap">
+    <p class="eyebrow">Selected work</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="proj-grid">
+
+      <article class="proj-card">
+        <div class="proj-preview p2"><img src="bg_logo.jpg" alt="Project preview" class="proj-preview-bg"></div>
+        <div class="proj-body">
+          <div class="kicker">Product design + frontend</div>
+          <h3>BatchGrade</h3>
+          <p>Conceptualized and designed an automated code grading platform to solve workflow inefficiencies for computer 
+             science teaching assistants (TAs) lacking institutional grading tools.
+          </p>
+          <div class="tags"><span class="tag">Figma</span></div>
+          <a href="#" class="proj-link">View case study →</a>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-preview p2"><img src="project_sphere.png" alt="Project preview" class="proj-preview-sphere"></div>
+        <div class="proj-body">
+          <div class="kicker">XO Student Design Challenge 2026</div>
+          <h3>The Sphere</h3>
+          <p>Independently conceptualized, storyboarded, and designed a full 360° immersive VR experience for the Las 
+             Vegas Sphere, translating the infinite digits of π into a visual cosmic narrative, stars forming a blackhole, 
+             converging into a pie.
+          </p>
+          <div class="tags"><span class="tag">Meta VR</div>
+          <a href="#" class="proj-link">View case study →</a>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-preview p3"><span class="mark">New</span></div>
+        <div class="proj-body">
+          <div class="kicker">Processing</div>
+          <h3>Coming Soon...</h3>
+          <p>Coming new project soon!</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="wrap">
+    <h2 class="section-title">A quick, honest note on experience</h2>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="meta">September 2024 - January 2025</div>
+        <h3>System Administrator</h3>
+        <div class="org">UNLV - Howard R. Hughes College of Engineering</div>
+        <p>• Developed the front-end of a website in a two-person team using HTML, CSS, delivering a functional and 
+             accessible interface for a CS professor project 
+        </p>
+        <p>• Provided front-line IT support and managed operations by troubleshooting hardware and software issues across 
+             UNLV campus offices including printer configuration, OS installation, and workstation setup documenting 
+             resolution steps to build institutional knowledge </p>
+        <p>• Observed and assisted in virtual server deployment and maintenance using Proxmox VE, gaining hands-on 
+             exposure to VM configuration, infrastructure documentation, and system reliability workflows 
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center;">Contact</p>
+    <h2 class="section-title" style="text-align:center;">Email me</h2>
+    <p class="lede" style="margin-left:auto; margin-right:auto; text-align:center;"></p>
+
+    <div class="envelope-stage">
+      <button class="envelope-btn" id="envelopeBtn" aria-expanded="false" aria-controls="letterForm">
+        <div class="envelope" id="envelope">
+          <div class="flap"></div>
+          <div class="seal"><img src="mini_logo.jpg" alt="JW" class="seal-img"></div>
+        </div>
+      </button>
+    </div>
+    <p class="hint-under" id="envelopeHint">click the seal to open your letter</p>
+
+    <form class="letter-form" id="letterForm">
+      <p class="to-line">Dear Jady,</p>
+      <div class="field">
+        <label for="fName">Your name</label>
+        <input type="text" id="fName" name="name" required>
+      </div>
+      <div class="field">
+        <label for="fEmail">Your email</label>
+        <input type="email" id="fEmail" name="email" required>
+      </div>
+      <div class="field">
+        <label for="fMsg">Your message</label>
+        <textarea id="fMsg" name="message" required></textarea>
+      </div>
+      <div class="send-row">
+        <button type="submit" class="btn-seal">Seal &amp; send letter</button>
+        <span class="sent-note" id="sentNote">
+      <p class="form-note"></p>
+    </form>
+
+    <div class="contact-links">
+      <a href="#" id="directEmailBtn">Email me directly</a>
+    </div>
+    <p class="foot-note">© 2026 Jady Woo. Designed and built by me.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
